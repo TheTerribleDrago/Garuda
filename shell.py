@@ -1,9 +1,10 @@
-import garuda
+import basic
 
 while True:
-    text = input("Garuda > ")
-    result,error = garuda.run(text)
+    text = input("Basic > ")
+    result, error = basic.run(text)
+
     if error:
-        print(error.as_string())
-    else:
+        print(error)
+    elif result is not None:
         print(result)

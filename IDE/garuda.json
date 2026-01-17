@@ -1,0 +1,102 @@
+{
+  "Print Statement": {
+    "prefix": "लिखतु",
+    "body": [
+      "लिखतु(${1:message})"
+    ],
+    "description": "Print statement"
+  },
+  "Variable Declaration": {
+    "prefix": "चर",
+    "body": [
+      "चर ${1:name} = ${2:value}"
+    ],
+    "description": "Declare a variable"
+  },
+  "If Statement": {
+    "prefix": "यदि",
+    "body": [
+      "यदि ${1:condition} तदा प्रारभ्य",
+      "\t${2:// code}",
+      "समाप्य"
+    ],
+    "description": "If statement"
+  },
+  "If-Else Statement": {
+    "prefix": "यदिअन्यथा",
+    "body": [
+      "यदि ${1:condition} तदा प्रारभ्य",
+      "\t${2:// code}",
+      "समाप्य अन्यथा प्रारभ्य",
+      "\t${3:// else code}",
+      "समाप्य"
+    ],
+    "description": "If-else statement"
+  },
+  "While Loop": {
+    "prefix": "पर्यंतम्",
+    "body": [
+      "पर्यंतम्(${1:condition}) तदा प्रारभ्य",
+      "\t${2:// code}",
+      "समाप्य"
+    ],
+    "description": "While loop"
+  },
+  "For Loop": {
+    "prefix": "प्रति",
+    "body": [
+      "प्रति(चर ${1:i} = ${2:0}; ${1:i} < ${3:10}; ${1:i} = ${1:i} + 1) तदा प्रारभ्य",
+      "\t${4:// code}",
+      "समाप्य"
+    ],
+    "description": "For loop"
+  },
+  "Function Definition": {
+    "prefix": "प्रत्याययतु",
+    "body": [
+      "प्रत्याययतु ${1:functionName}(${2:args}) तदा प्रारभ्य",
+      "\t${3:// code}",
+      "\tप्रत्यावर्तयतु ${4:result}",
+      "समाप्य"
+    ],
+    "description": "Function definition"
+  },
+  "Input Statement": {
+    "prefix": "पठतु",
+    "body": [
+      "चर ${1:input} = पठतु(${2:\"Enter value: \"})"
+    ],
+    "description": "Input statement"
+  },
+  "List Declaration": {
+    "prefix": "list",
+    "body": [
+      "चर ${1:listName} = [${2:elements}]"
+    ],
+    "description": "Declare a list"
+  },
+  "Block": {
+    "prefix": "प्रारभ्य",
+    "body": [
+      "प्रारभ्य",
+      "\t${1:// code}",
+      "समाप्य"
+    ],
+    "description": "Code block"
+  },
+  "True": {
+    "prefix": "सत्यम्",
+    "body": "सत्यम्",
+    "description": "Boolean true"
+  },
+  "False": {
+    "prefix": "असत्यम्",
+    "body": "असत्यम्",
+    "description": "Boolean false"
+  },
+  "Null": {
+    "prefix": "शून्यम्",
+    "body": "शून्यम्",
+    "description": "Null value"
+  }
+}

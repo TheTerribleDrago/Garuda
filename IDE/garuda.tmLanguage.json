@@ -1,0 +1,128 @@
+{
+  "name": "Garuda",
+  "scopeName": "source.garuda",
+  "fileTypes": [".garuda"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#constants"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.garuda",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.garuda",
+          "match": "\\b(यदि|तदा|अन्यथा|पर्यंतम्|प्रति|प्रारभ्य|समाप्य|प्रत्यावर्तयतु|विस्मर्यताम्|अनन्तम्)\\b"
+        },
+        {
+          "name": "keyword.other.garuda",
+          "match": "\\b(चर|प्रत्याययतु)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.garuda",
+          "match": "\\b(तथा|वा|न)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.garuda",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.garuda",
+              "match": "\\\\(n|t|\"|'|\\\\)"
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.garuda",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.garuda",
+              "match": "\\\\(n|t|\"|'|\\\\)"
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.garuda",
+          "match": "\\b([0-9०१२३४५६७८९]+\\.?[0-9०१२३४५६७८९]*)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.arithmetic.garuda",
+          "match": "\\+|\\-|\\*|\\/|\\^|%"
+        },
+        {
+          "name": "keyword.operator.comparison.garuda",
+          "match": "==|!=|<=|>=|<|>"
+        },
+        {
+          "name": "keyword.operator.assignment.garuda",
+          "match": "="
+        },
+        {
+          "name": "keyword.operator.arrow.garuda",
+          "match": "->"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function.garuda",
+          "match": "\\b(लिखतु|पठतु|दैर्घ्य|योजयतु|विभाजयतु|सम्मिलयतु)(?=\\s*\\()"
+        },
+        {
+          "name": "entity.name.function.user-defined.garuda",
+          "match": "\\b([a-zA-Z_\\u0900-\\u097F][a-zA-Z0-9_\\u0900-\\u097F]*)(?=\\s*\\()"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.garuda",
+          "match": "\\b(शून्यम्|सत्यम्|असत्यम्)\\b"
+        }
+      ]
+    }
+  }
+}

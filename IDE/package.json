@@ -1,0 +1,49 @@
+{
+  "name": "garuda-lang",
+  "displayName": "Garuda Programming Language",
+  "description": "Language support for Garuda - A Sanskrit-based programming language",
+  "version": "1.0.0",
+  "publisher": "garuda",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "garuda",
+        "aliases": [
+          "Garuda",
+          "garuda"
+        ],
+        "extensions": [
+          ".garuda"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/garuda-icon.png",
+          "dark": "./icons/garuda-icon.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "garuda",
+        "scopeName": "source.garuda",
+        "path": "./syntaxes/garuda.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "garuda",
+        "path": "./snippets/garuda.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheTerribleDrago/Garuda.git"
+  }
+}
